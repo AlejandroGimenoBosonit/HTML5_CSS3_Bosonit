@@ -18,22 +18,23 @@
             <!-- Name -->
             <div id="form-group">
                 <label id="name-label" for="name">Name</label>
-                <input id="name" type="text">
+                <input id="name" type="text" placeholder="Enter your name" required>
             </div>
             <!-- email -->
             <div id="form-group">
                 <label id="email-label" for="email">Email</label>
-                <input id="email" type="text">
+                <input id="email" type="email" placeholder="Enter your email" required>
             </div>
             <!-- age -->
             <div id="form-group">
                 <label id="number-label" for="age">Age (optional)</label>
-                <input id="age" type="text">
+                <input id="number" type="number" max="70" min="18" placeholder="Age">
             </div>
             <!-- role -->
             <div id="form-group">
                 <label id="role-label" for="">Which option best describes your current role?</label>
                 <select name="dropdown" id="dropdown">
+                    <option value="Default" selected>Select current role</option>
                     <option value="Student">Student</option>
                     <option value="Full time job">Full time job</option>
                     <option value="Full time learner">Full time learner</option>
@@ -44,44 +45,46 @@
             <!-- radio -->
             <div id="form-group">
                 <label id="radio-label" for="">Would you recommend freeCodeCamp to a friend?</label>
+                <fieldset id="group1">
+                    <label>
+                        <input id="radio1" type="radio" value="definitely" name="group1">Definitely
+                    </label>
+                    <label>
+                        <input id="radio2" type="radio" value="maybe" name="group1">Maybe
+                    </label>
+                </fieldset>
 
-                <div>
-                    <input id="radio1" type="radio" value="definitely" name="definitely">
-                    <label for="radio1">Definitely</label> 
-                </div>
+                <fieldset id="group2">
+                    <label>
+                        <input id="radio3" type="radio" value="not sure" name="group2">Not sure
+                    </label>
+                    <label>
+                        <input id="radio4" type="radio" value="not sure" name="group2">Definitely not
+                    </label>
+                </fieldset>
 
-                <div>
-                    <input id="radio2" type="radio" value="maybe" name="maybe">
-                    <label for="radio2">Maybe</label>
-                </div>
-
-                <div>
-                    <input id="radio3" type="radio" value="not sure" name="not sure">
-                    <label for="radio3">Not sure</label>
-                </div>
-            </div>
             <!-- feature -->
             <div id="form-group">
                 <label id="feature-label" for="">What is your favorite feature of freeCodeCamp?</label>
-                <label for=""><input id="feature-1" type="checkbox"> Front-end Projects</label>
-                <label for=""><input id="feature-2" type="checkbox"> Back-end Projects</label>
-                <label for=""><input id="feature-3" type="checkbox"> Data Visualization</label>
-                <label for=""><input id="feature-4" type="checkbox"> Challenges</label>
-                <label for=""><input id="feature-5" type="checkbox"> Open Source Community</label>
-                <label for=""><input id="feature-6" type="checkbox"> Gitter help rooms</label>
-                <label for=""><input id="feature-7" type="checkbox"> Videos</label>
-                <label for=""><input id="feature-8" type="checkbox"> City Meetups</label>
-                <label for=""><input id="feature-9" type="checkbox"> Wiki</label>
-                <label for=""><input id="feature-10" type="checkbox"> Forum</label>
-                <label for=""><input id="feature-11" type="checkbox"> Additional Courses</label>
+                <label for=""><input id="feature-1" type="checkbox" value="Front-end"> Front-end Projects</label>
+                <label for=""><input id="feature-2" type="checkbox" value="Back-end"> Back-end Projects</label>
+                <label for=""><input id="feature-3" type="checkbox" value="Data"> Data Visualization</label>
+                <label for=""><input id="feature-4" type="checkbox" value="Challenges"> Challenges</label>
+                <label for=""><input id="feature-5" type="checkbox" value="Open Source"> Open Source Community</label>
+                <label for=""><input id="feature-6" type="checkbox" value="Gitter"> Gitter help rooms</label>
+                <label for=""><input id="feature-7" type="checkbox" value="Videos"> Videos</label>
+                <label for=""><input id="feature-8" type="checkbox" value="City"> City Meetups</label>
+                <label for=""><input id="feature-9" type="checkbox" value="Wiki"> Wiki</label>
+                <label for=""><input id="feature-10" type="checkbox" value="Forum"> Forum</label>
+                <label for=""><input id="feature-11" type="checkbox" value="Courses"> Additional Courses</label>
             </div>
             <!-- text area -->
             <div id="form-group">
                 <label id="text-label" for=""></label>
-                <textarea name="textarea" id="10" cols="30" rows="10">Enter tour comment here...</textarea>
+                <textarea name="textarea" id="10" cols="3" rows="10">Enter tour comment here...</textarea>
             </div>
             <!-- button -->
-            <button type="submit">Submit</button>
+            <button id="submit" type="submit">Submit</button>
         </form>
     </div>
 </body>
