@@ -57,7 +57,7 @@ label {
     margin: 10px;
 }
 
-#name, #email, #age, #feature, #dropdown{
+#name, #email, #number, #feature, #dropdown{
     height: 2.375rem;
 }
 button {
