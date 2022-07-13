@@ -26,7 +26,7 @@ body {
     background-color: var(--primary-background-color);
     color: var(--font-color);
 
-    width: 300px;
+    width: 200px;
     height: 100%;   
 
     border-right: solid;
@@ -39,6 +39,10 @@ body {
     margin-top: 5px;
     margin-left: 15px;
     
+}
+
+#title-img {
+    width: 50%;
 }
 
 #title #title-text a{
@@ -83,7 +87,7 @@ a {
     font-size: 23px;
 }
 
-@media (min-width: 400px){
+@media (width: 400px){
     body {
         margin: 1px;
         height: 100%;
