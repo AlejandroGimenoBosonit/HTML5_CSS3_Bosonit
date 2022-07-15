@@ -51,15 +51,28 @@ label {
     font-size: 1.125rem;
 }
 
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
 #form-group {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-#name, #email, #number, #feature, #dropdown{
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select {
     height: 2.375rem;
 }
+
+
+
 button {
     display: block;
     width: 97%;
